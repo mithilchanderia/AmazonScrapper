@@ -24,7 +24,7 @@ def send_mail(title,price):
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('fragout1010@gmail.com','Mithil@135')
+    server.login('fragout1010@gmail.com','password')
     subject='PRICE OF {} IS DOWN'.format(title)
     body='Here is the link to the product: {} Hurry up!'.format(URL)
     msg1=f"Subject:{subject}\n\n{body}"
@@ -40,4 +40,4 @@ def send_mail(title,price):
 while(flag==True):
     print(flag)
     check_price()
-    time.sleep(15)
+    time.sleep(60)
